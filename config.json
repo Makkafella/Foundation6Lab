@@ -1,0 +1,57 @@
+{
+  "projectinfo": {
+    "name": "Components"
+  },
+  "css": {
+    "autoprefixer": {
+      "browsers": ["last 2 versions", "ie >= 9", "and_chr >= 2.3"]
+    }
+  },
+  "js": {
+    "output": "scripts.js",
+    "libs": [
+        "jquery/dist/jquery.min.js"
+    ],
+    "includes": [
+      "**/*.js"
+    ]
+  },
+  "paths": {
+    "src": {
+      "dependencies": "./src/dependencies/",
+      "src": "./src/",
+      "js": "./src/scripts/",
+      "sass": "./src/sass/",
+      "less": "./src/less/",
+      "fonts": "./src/fonts/",
+      "img": "./src/img/",
+      "dummy": "./src/dummy-content/",
+      "html": {
+        "dir": "./src/html/",
+        "hintrc":"./src/html/.htmlhintrc",
+        "pages": "./src/html/pages/",
+        "partials": ["./src/html/block/", "./src/html/includes/"]
+      }
+    },
+    "destination": {
+      "dev": {
+        "dir": "./mockups/",
+        "js": "assets/js/",
+        "css": "assets/css/",
+        "fonts": "assets/fonts/",
+        "img": "assets/img/",
+        "dummy": "assets/dummy-content/",
+        "html": ""
+      },
+      "prod": {
+        "dir": "../Pure.MVC/assets/",
+        "js": "js/",
+        "css": "css/",
+        "fonts": "fonts/",
+        "img": "img/",
+        "dummy": "dummy-content/",
+        "html": "mockups/"
+      }
+    }
+  }
+}

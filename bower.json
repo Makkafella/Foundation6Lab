@@ -1,0 +1,7 @@
+{
+  "name": "components",
+  "dependencies": {
+    "modernizr": "2.x",
+    "foundation-sites": "^6.3.1"
+  }
+}
